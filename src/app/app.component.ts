@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import {COURSES} from '../db-data';
 import { Course } from './model/course';
 
@@ -9,7 +9,7 @@ import { Course } from './model/course';
 })
 export class AppComponent {
 
-  courses = COURSES;
+  public courses = COURSES;
 
   courseClickedIdk(course:Course) {
     console.log("IDKKKK", course)
