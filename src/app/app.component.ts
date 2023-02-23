@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {COURSES} from '../db-data';
+import { Course } from './model/course';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,9 @@ import {COURSES} from '../db-data';
 })
 export class AppComponent {
 
+  courses = COURSES;
 
-
+  courseClickedIdk(course:Course) {
+    console.log("IDKKKK", course)
+  }
 }
