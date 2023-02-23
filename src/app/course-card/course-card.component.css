@@ -1,0 +1,11 @@
+.course-card.beginner {
+    background-color: rgb(80, 244, 123);
+}
+
+.course-card.intermediate {
+    background-color: cornflowerblue;
+}
+
+.course-card.advanced {
+    background-color: rgb(252, 70, 70);
+}

@@ -1,13 +1,14 @@
-<div class="course-card">
+<div class=""
+    [ngClass]="getClasses()">
 
     <div class="course-title">
-        {{ course.description }}
+        {{ course?.description }}
     </div>
-    <img width="300" alt="Angular Logo"
-         [src]="course.iconUrl">
+    <img width="300" alt="Angular Logo" *ngIf="course && course?.iconUrl"
+         [src]="course?.iconUrl">
 
     <div class="course-description">
-        {{ course.longDescription }}
+        {{ course?.longDescription }}
     </div>
 
     <button (click)="onCourseViewd()"> View Course </button>

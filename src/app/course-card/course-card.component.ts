@@ -19,6 +19,15 @@ export class CourseCardComponent implements OnInit{
     this.courseSelected.emit(this.course);
   }
 
+  getClasses() {
+    return {
+      "course-card":true,
+      "beginner": this.course?.category == "BEGINNER",
+      "intermediate": this.course?.category == "INTERMEDIATE",
+      "advanced": this.course?.category == "ADVANCED"
+    };
+  }
+
   ngOnInit() {
     
   }
